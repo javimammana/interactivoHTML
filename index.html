@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de pintura</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    
+<div class="col-12 d-flex p-4">
+    <div class="col-9 ingreso de datos">
+        <div class="pared">
+            <div class="">
+                <h4>Ingresemos la medida de la Pared en Metros (Ej: 2.65  /  1.80)</h4>
+                <form id="formuPared" class="d-flex justify-content-around" action="">
+                    <input id="altoPared" class="col-5" type="number" placeholder="Ingresa el Alto de la Pared.-">
+                    <input id="anchoPared" class="col-5" type="number" placeholder="Ingresa el Ancho de la Pared.-">
+                </form>
+            </div>
+
+            <div>
+                <h4>Agregar Puerta?</h4>
+                <input class="checkPuerta" type="checkbox" name="" id="">
+                <div class="agregarPuerta">
+                    <h4>Ingresemos la medida de la Puerta en Metros (Ej: 2.65  /  1.80)</h4>
+                    <form id="formuPuerta" class="d-flex justify-content-around" action="">
+                        <input id="altoPuerta" class="col-5" type="number" placeholder="Ingresa el Alto de la Puerta.-">
+                        <input id="anchoPuerta" class="col-5" type="number" placeholder="Ingresa el Ancho de la Puerta.-">
+                    </form>
+                </div>
+            </div>
+            
+            <div>
+                <h4>Agregar Ventana?</h4>
+                <input class="checkVentana" type="checkbox" name="" id="">
+                <!--
+                <select id="cantVentanas" class="" name="Servicio" id="">
+                    <option value="No">No</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                -->
+                <div class="agregarVentana">
+                    <h4>Ingresemos la medida de la Ventana en Metros (Ej: 2.65  /  1.80)</h4>
+                    <form id="formuVentana" class="d-flex justify-content-around" action="">
+                        <input id="altoVentana" class="col-5" type="number" placeholder="Ingresa el Alto de la Ventana.-">
+                        <input id="anchoVentana" class="col-5" type="number" placeholder="Ingresa el Ancho de la Ventana.-">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column">
+            <button id="btnCaptura" class="m-2">Agregar otra Pared</button>
+            <button id="btnResultado" class="m-2">Calcular</button>
+            <button id="refresh" class="m-2">Empezar de nuevo!</button>
+        </div>
+
+    </div>
+    <div>
+        <div id="resultado">
+            <H5>M2 totales a Cubrir</H5>
+        </div>
+
+        <div id="listado" class="resultados">
+
+        </div>
+    </div>
+</div>
+
+    <!-- JS only -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

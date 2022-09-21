@@ -1,0 +1,15 @@
+.agregarPuerta {
+    display: none;
+}
+
+.checkPuerta:checked + .agregarPuerta {
+    display: block;
+}
+
+.agregarVentana {
+    display: none;
+}
+
+.checkVentana:checked + .agregarVentana {
+    display: block;
+}
